@@ -3,10 +3,14 @@
 -............................///// */
 
 .love-imoji{
-    color: #ff0000;
+    color: var(--text-color);
     font-size: 5rem;
 }
 
-/* /----------------------------------
-.......different between width and max-width..............
--............................///// */
+:root{
+    --text-color:green;
+}
+
+.property{
+    white-space: nowrap;
+}

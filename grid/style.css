@@ -1,0 +1,38 @@
+
+.header, .navbar, .sidebar, .main, .article, .footer{
+    background: peachpuff;
+    padding: 10px;
+    margin: 10px;
+}
+    
+
+.header{
+    grid-area: header;
+}
+.navbar{
+    grid-area: navbar;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.main{
+    grid-area: main;
+}
+.article{
+    grid-area: article;
+}
+.footer{
+    grid-area: footer;
+}
+
+.main-section{
+    /* max-width: 1280px;
+    margin: auto; */
+    display: grid;
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    grid-template-areas: 
+    "header header header header"
+    "navbar main main  article"
+    "navbar main main sidebar"
+    "footer footer footer  footer";
+}
